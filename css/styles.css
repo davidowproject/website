@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*********************
+Colors
+blue: #4fc5e7;
+grey: #3b3c3e;
+white: #ebebeb;
+**********************/
+/*whole website background color*/
+body{
+	background-color:#ebebeb;
+}
+
+#navBar{
+	background-color:#3b3c3e;
+	color:#ebebeb;
+	height:4em;	
+}
+
+div.active{
+	padding-left:5em;
+	padding-right:5em;	
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image:none;	
+}
+
+.carousel-control{
+	width:5%;	
+}
+
+
+/*dots between menu options*/
+.nav-menu > li > a:after{
+  	color:#3b3c3e;
+	}
+
+/*nav dropdown links*/
+.nav-menu > li > a:link{
+	background-color:#4fc5e7;
+	}
+	.main-navigation ul ul a:hover{
+  	background-color:#4fc5e7;
+	color:#ebebeb;
+	}
+	 
+/*color of menu links on click*/
+a{
+ 	color:#4fc5e7;
+}
+
+	.main-navigation ul ul li.focus > a{
+ 	color:#3b3c3e;
+	}
+
+/*size of personal links*/	  
+img.personalLinks{
+	width:3em;
+	}
+	
+/*establish size of overlay*/
+.imageOverlay{
+  	width:200px;
+	height:300px;
+	}
+	
+/*establish size of links*/	
+.hoverLinks{
+  	visibility:hidden;
+	height:300px;
+	width:200px;
+	background-color:#4fc5e7;
+	top:0;
+	left:0;
+	opacity:.8;
+	}
+	  
+/*position pic so links can sit on top of them*/
+.picHover{
+  position:absolute;
+  }
+
+	/*make links show on hover*/
+	.imageOverlay:hover .hoverLinks{
+  		visibility:visible;
+	  
+	}
+	 
+/*twitter icon at bottom in footer*/		  
+.social-links ul a:before{
+		background:#4fc5e7;
+	  }
+	  
+	  

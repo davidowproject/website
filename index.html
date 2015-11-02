@@ -1,1 +1,114 @@
-foo
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Davidow Website</title>
+
+<!-- bootstrap link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- jquery for bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<!-- link to custom styles -->
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="row" id="navBar">
+	<div class="col-md-1"></div>
+  	<div class="col-md-3">
+    	<h2>The Davidow Project</h2>
+    </div>
+  	<div class="col-md-8">
+    	<a href="#mission">Our Mission</a>
+        <a href="#process">Process</a>
+        <a href="#team">Our Team</a>
+    </div>
+</div>
+
+<div class="row" id="mission">
+	<div class="col-md-1"></div>
+  	<div class="col-md-10">
+    	<h3>Our Mission</h3>	
+    </div>
+  	<div class="col-md-1"></div>
+</div>
+
+
+
+<div class="row" id="process">
+	<div class="col-md-1"></div>
+  	<div class="col-md-10">
+    	<h3>Process</h3>
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <h4>What is BLE?</h4>
+              <p>BLE stands for Bluetooth Low Energy. It allows different devices to communicate specific bits of information between each other wirelessly. There are two parts required for our app to work. The first thing we need is a method of sending out a signal. We accomplished this by using a series of Estimote beacons, small rock-shaped devices that send out packets of information every few moments with a Bluetooth signal. Each beacon has its own unique ID, so we gave each piece of art it’s own beacon. We could then say “This piece of art is associated with beacon number three, so anytime a phone hears beacon number three, it must be near that piece.” All that was left now was to build an app that would do the listening and display the relevant information.</p>
+            </div>
+            
+            <div class="item">
+            	<h4>Phase 1</h4>
+            	<p>The first stage of the Davidow Project involved creating a proof of concept app to show what was possible with BLE technology. Lance King, a graduate of the EMAC program at UTD, kicked off the Davidow Project by creating an app to map pieces of art depending on which beacons were detected. He encountered several obstacles along the way, such as determining with sufficient accuracy the distance from a beacon when there was an abundance of signal noise. His work laid the foundation for another group of developers and designers to build upon. In the spring of 2015, an Internet Studio II class began working on the Davidow Project alongside Lance, working together to bring his idea to life on a much larger scale.</p>
+            </div>
+            
+            <div class="item">
+            	<h4>Phase 2: Internet Studio 2</h4>
+            	<p>During phase two, students were divided into 3 teams and began to frame the Davidow design.
+The Research Team studied the artist’s work, conducted user interviews, and developed user evolution charts. This information gave the team a better understanding of how the user could be motivated to explore the Davidow app in its entirety.
+
+The User Interface Team helped to design not only the visual appearance of the app, but also the functionality. Red Route diagrams, a list of design principles, and a UI kit were created to begin fleshing out what the application might look like. With the inclusion of a splash screen, an engaging onboarding session, and the website you’re exploring now, the UI team was able to produce the first look at how the app might appear on a smartphone.
+
+The Development Team worked to define the beacon functionality and how to pair it with the artwork in the ATEC building. Also, the developers worked with the other teams to tie all the pieces together in order to create a solid foundation for the continuation of the Davidow Project.</p>
+			</div>
+            
+            <div class="item">
+            	<h4>Phase 3: Lean Mean Team</h4>
+            	<p>Phase 3 is the last stage of the Davidow Project and consists of the lean, mean team – Judy Nguyen, Dylan Orgeron, Dylan Carroll, and Summer Saylor. Starting in the Fall 2015 semester, 4 students and 1 professor embarked on a journey to further refine and complete the Davidow website and app, and ultimately launch the app into the Google Play store.
+
+The team began the semester by outlining their goals and researching how BLE devices and other similar technologies, like RFID and NFC tags, were being used. After exploring various academic journals and online articles, the team found several innovative ways to use bluetooth and NFC tags that helped inspire new features of the app.
+
+Once the team learned a little bit about how other people were using this type of technology, they began their work on the Davidow app and website. You can follow their progress here on their Github page.</p>
+			</div>
+            
+          </div>
+        
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+  	<div class="col-md-1"></div>
+</div>
+
+<div class="row" id="team">
+	<div class="col-md-1">.col-md-1</div>
+  	<div class="col-md-10">
+    	<h3>Our Team</h3>	
+    </div>
+  	<div class="col-md-1">.col-md-1</div>
+</div>
+
+</body>
+</html>
