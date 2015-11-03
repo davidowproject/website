@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900);
+
 /*********************
 Colors
 blue: #4fc5e7;
@@ -14,8 +17,30 @@ body{
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
-	height:4em;	
 }
+	#navBar h2{
+		font-family:"Oswald", sans-serif;
+		font-weight:300;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-size:2em;	
+		padding-left:5%;
+	}
+	#navBar .col-md-8{
+		text-align:right;	
+	}
+	#navBar a{
+		font-family:Source Sans Pro;
+		font-size:1.2em;
+		color:#ebebeb;
+		padding-right:5%;
+	}
+		#navBar a:hover{
+		font-family:Source Sans Pro;
+		color:#4fc5e7;
+		text-decoration:none;
+	}
+
 
 div.active{
 	padding-left:5em;
@@ -29,30 +54,6 @@ div.active{
 .carousel-control{
 	width:5%;	
 }
-
-
-/*dots between menu options*/
-.nav-menu > li > a:after{
-  	color:#3b3c3e;
-	}
-
-/*nav dropdown links*/
-.nav-menu > li > a:link{
-	background-color:#4fc5e7;
-	}
-	.main-navigation ul ul a:hover{
-  	background-color:#4fc5e7;
-	color:#ebebeb;
-	}
-	 
-/*color of menu links on click*/
-a{
- 	color:#4fc5e7;
-}
-
-	.main-navigation ul ul li.focus > a{
- 	color:#3b3c3e;
-	}
 
 /*size of personal links*/	  
 img.personalLinks{
