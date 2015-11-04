@@ -11,9 +11,13 @@ white: #ebebeb;
 **********************/
 /*whole website background color*/
 body{
-	background-color:#ebebeb;
+	background-color:white;
 }
-
+p{
+	font-family:Source Sans Pro, sans-serif;
+	font-size:1.1em;
+	font-weight:300;
+}
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
@@ -30,17 +34,30 @@ body{
 		text-align:right;	
 	}
 	#navBar a{
-		font-family:Source Sans Pro;
+		font-family:Source Sans Pro, sans-serif;
 		font-size:1.2em;
 		color:#ebebeb;
 		padding-right:5%;
 	}
 		#navBar a:hover{
-		font-family:Source Sans Pro;
+		font-family:Source Sans Pro, sans-serif;
 		color:#4fc5e7;
 		text-decoration:none;
 	}
 
+h1, h2, h3, h4, h5, h6{
+	font-family:Oswald, sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+}
+#process, #team{
+	padding-top:5%;
+}
+
+.imgFloat{
+	float:left;
+	padding-left:5%;
+}
 
 div.active{
 	padding-left:5em;
