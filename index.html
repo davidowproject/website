@@ -20,171 +20,231 @@
 </head>
 
 <body>
-
-<div class="row" id="navBar">
-  	<div class="col-md-4 col-sm-6">
-    	<h2>The Davidow Project</h2>
-    </div>
-  	<div class="col-md-8 col-sm-6">
-    	<a href="#mission">Our Mission</a>
-        <a href="#process">Process</a>
-        <a href="#team">Our Team</a>
-    </div>
-    
-</div>
-
-<div class="row" id="mission">
-	<div class="col-md-1"></div>
-  	<div class="col-md-10">
-    	<h3>Our Mission</h3>	
-      <p>The Davidow Project’s mission is to utilize Bluetooth Low Energy technology in order to interact with the Davidow Collection of artwork in the Arts and Technology building at the University of Texas at Dallas. Our app is currently under development, check here for updates on our progress…</p>
-    </div>
-  	<div class="col-md-1"></div>
-</div>
-
-
-
-<div class="row" id="process">
-  <div class="col-md-12">
-    <h3>Process</h3>
-  </div>
-
-  <div class="row">
-	<div class="col-md-1"></div>
-  	<div class="col-md-10">
-    	
-    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          </ol>
-        
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <h4>What is BLE?</h4>
-              <p>BLE stands for Bluetooth Low Energy. It allows different devices to communicate specific bits of information between each other wirelessly. There are two parts required for our app to work. The first thing we need is a method of sending out a signal. We accomplished this by using a series of Estimote beacons, small rock-shaped devices that send out packets of information every few moments with a Bluetooth signal. Each beacon has its own unique ID, so we gave each piece of art it’s own beacon. We could then say “This piece of art is associated with beacon number three, so anytime a phone hears beacon number three, it must be near that piece.” All that was left now was to build an app that would do the listening and display the relevant information.</p>
-            </div>
-            
-            <div class="item">
-            	<h4>Phase 1</h4>
-            	<p>The first stage of the Davidow Project involved creating a proof of concept app to show what was possible with BLE technology. Lance King, a graduate of the EMAC program at UTD, kicked off the Davidow Project by creating an app to map pieces of art depending on which beacons were detected. He encountered several obstacles along the way, such as determining with sufficient accuracy the distance from a beacon when there was an abundance of signal noise. His work laid the foundation for another group of developers and designers to build upon. In the spring of 2015, an Internet Studio II class began working on the Davidow Project alongside Lance, working together to bring his idea to life on a much larger scale.</p>
-            </div>
-            
-            <div class="item">
-            	<h4>Phase 2: Internet Studio 2</h4>
-            	<p>During phase two, students were divided into 3 teams and began to frame the Davidow design.
-The Research Team studied the artist’s work, conducted user interviews, and developed user evolution charts. This information gave the team a better understanding of how the user could be motivated to explore the Davidow app in its entirety.
-
-The User Interface Team helped to design not only the visual appearance of the app, but also the functionality. Red Route diagrams, a list of design principles, and a UI kit were created to begin fleshing out what the application might look like. With the inclusion of a splash screen, an engaging onboarding session, and the website you’re exploring now, the UI team was able to produce the first look at how the app might appear on a smartphone.
-
-The Development Team worked to define the beacon functionality and how to pair it with the artwork in the ATEC building. Also, the developers worked with the other teams to tie all the pieces together in order to create a solid foundation for the continuation of the Davidow Project.</p>
-			</div>
-            
-            <div class="item">
-            	<h4>Phase 3: Lean Mean Team</h4>
-            	<p>Phase 3 is the last stage of the Davidow Project and consists of the lean, mean team – Judy Nguyen, Dylan Orgeron, Dylan Carroll, and Summer Saylor. Starting in the Fall 2015 semester, 4 students and 1 professor embarked on a journey to further refine and complete the Davidow website and app, and ultimately launch the app into the Google Play store.
-
-The team began the semester by outlining their goals and researching how BLE devices and other similar technologies, like RFID and NFC tags, were being used. After exploring various academic journals and online articles, the team found several innovative ways to use bluetooth and NFC tags that helped inspire new features of the app.
-
-Once the team learned a little bit about how other people were using this type of technology, they began their work on the Davidow app and website. You can follow their progress here on their Github page.</p>
-			</div>
-            
-          </div>
-        
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+<div class="container">
+    <div class="row" id="navBar">
+        <div class="col-md-4 col-sm-6">
+            <h2>The Davidow Project</h2>
         </div>
-    </div>
-  	<div class="col-md-1"></div>
-</div>
-
-<div class="row" id="team">
-  <div class="col-md-12">
-    <h3>Our Team</h3> 
-  </div>
-<div>
-
-<div class="row">
-	<div class="col-md-1"></div>
-  	<div class="col-md-10">
-      <div class="imgFloat img-container">
-        <img src="img/lking.jpg" class="headshots picHover"> 
-        <h4>Lance King</h4>
-        <h5>Project Founder</h5>
-      </div> 
-       
-      <div class="imgFloat img-container">
-        <img src="img/cnazir.jpg" class="headshots picHover"> 
-        	<div class="hoverLinks">
-              <a href="http://cassininazir.com/" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Cassinis Website" class="personalLinks"></a>
-              <a href="https://twitter.com/cassininazir" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Cassini on Twitter" class="personalLinks"></a>
-              <a href="https://www.linkedin.com/in/cassininazir" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Cassini on LinkedIn" class="personalLinks"></a>
-        	</div>
-        <h4>Cassini Nazir</h4>
-        <h5>Project Coordinator</h5>
-      </div>
-    </div>
-  <div class="col-md-1"></div>
-</div><!-- close lance and cassini row -->
-            
-    	</div>
-        
-        <div class="row">
-        	<div class="col-md-2"></div>
-        	<div class="col-md-8">
-                <div class="imgFloat">
-                  <img src="img/dcarroll.jpg" class="headshots clip-ellipse"> 
-                  <h4>Dylan Carroll</h4>
-                  <h5>EMAC 2015</h5>
+        <div class="col-md-8 col-sm-6">
+            <a href="#mission">Our Mission</a>
+            <a href="#process">Process</a>
+            <a href="#team">Our Team</a>
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row" id="mission">
+        <div class="col-md-12">
+            <h3>Mission</h3>
+            <a href="#process">
+                <div>
+                    <img src="img/downArrow.svg" class="downButton bounce">
                 </div>
+            </a>
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+            <p class="paragraph">The Davidow Project’s mission is to utilize Bluetooth Low Energy technology in order to interact with the Davidow Collection of artwork in the Arts and Technology building at the University of Texas at Dallas. Our app is currently under development, check here for updates on our progress…</p>
+            <div class="row">
+                <div class="col-md-8" id="overviewProcess">
+                    <h5>Overview</h5>
+                    <p>The personal collection of Dallas collector and educator Joan Davidow are showcased throughout the universities Edith O’Donnell Arts and Technology building. Typically faculty, students, and administrators glance at the pieces as they go about their day. When the passersby does stop to observe the works, the extent that they are able to interact with the pieces ends with as they leave. The goal of our project is to provide the user another means of engaging with the Davidow Collection as well as provide the viewer the ability locate other pieces of interest.</p>
+                    <h5>Process</h5>
+                    <p>To create the app we set up a research, user interface design, and code development team.The research team began by researching the intended users. documenting and mapping the location of the art pieces.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/brandLogos.png" class="logos">
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <img src="img/brandLogos2.png" class="logos">
+                </div>
+                <div class="col-md-8" id="craftImpact">
+                    <h5>Craft</h5>
+                    <p>An interactive app was developed to assist viewers of the Davidow collection in navigating the large gallery spaced throughout the ATEC building located in UTD. The coding was build from scratch using a combination of HTML, CSS and several other frameworks to deliver an interactive experience that would be fluid and responsive. The concept was to create a design that would represent the sophistication and detailed nature of the Davidow Collection. Ultimately the inclusion of the estimotes was used to make the experience one truly unique to the fundamental values of the ATEC building.</p>
+                    <h5>Impact</h5>
+                    <p>The completion of the Davidow Project bring a whole new wave of possibilities in ways that viewers can interact with the art collection at UTD. Current student are able to download the app and share their experience along with valuable input and criticism amongst their peers. New visitors to the Arts and Technology Building can also join in and gain a new perspective on any of the wonderful pieces of artwork on display at any given moment. The introduction of estimote functionality incorporated into the app showcases the future of digital interactions in gallery spaces; pioneering a new way in the internet of things.</p>
+                </div>
+             </div>	
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row" id="process">
+        <div class="col-md-12">
+            <h3>Process</h3>
+            <a href="#team">
+                <div>
+                    <img src="img/downArrow.svg" class="downButton">
+                </div>
+            </a>
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>What is BLE?</h4>
+                    <p>BLE stands for Bluetooth Low Energy. It allows different devices to communicate specific bits of information between each other wirelessly. There are two parts required for our app to work. The first thing we need is a method of sending out a signal. We accomplished this by using a series of Estimote beacons, small rock-shaped devices that send out packets of information every few moments with a Bluetooth signal. Each beacon has its own unique ID, so we gave each piece of art it’s own beacon. We could then say “This piece of art is associated with beacon number three, so anytime a phone hears beacon number three, it must be near that piece.” All that was left now was to build an app that would do the listening and display the relevant information.</p>
+                </div>
+                
+                <div class="item">
+                    <h4>Phase 1</h4>
+                    <p>The first stage of the Davidow Project involved creating a proof of concept app to show what was possible with BLE technology. Lance King, a graduate of the EMAC program at UTD, kicked off the Davidow Project by creating an app to map pieces of art depending on which beacons were detected. He encountered several obstacles along the way, such as determining with sufficient accuracy the distance from a beacon when there was an abundance of signal noise. His work laid the foundation for another group of developers and designers to build upon. In the spring of 2015, an Internet Studio II class began working on the Davidow Project alongside Lance, working together to bring his idea to life on a much larger scale.</p>
+                </div>
+                
+                <div class="item">
+                    <h4>Phase 2: Internet Studio 2</h4>
+                    <p>During phase two, students were divided into 3 teams and began to frame the Davidow design.
+        The Research Team studied the artist’s work, conducted user interviews, and developed user evolution charts. This information gave the team a better understanding of how the user could be motivated to explore the Davidow app in its entirety.</p>
         
-                <div class="imgFloat">
-                  <img src="img/dorgeron.jpg" class="headshots clip-ellipse"> 
+                    <p>The User Interface Team helped to design not only the visual appearance of the app, but also the functionality. Red Route diagrams, a list of design principles, and a UI kit were created to begin fleshing out what the application might look like. With the inclusion of a splash screen, an engaging onboarding session, and the website you’re exploring now, the UI team was able to produce the first look at how the app might appear on a smartphone.</p>
+        
+                    <p>The Development Team worked to define the beacon functionality and how to pair it with the artwork in the ATEC building. Also, the developers worked with the other teams to tie all the pieces together in order to create a solid foundation for the continuation of the Davidow Project.</p>
+                </div>
+                
+                <div class="item">
+                    <h4>Phase 3: Lean Mean Team</h4>
+                    <p>Phase 3 is the last stage of the Davidow Project and consists of the lean, mean team – Judy Nguyen, Dylan Orgeron, Dylan Carroll, and Summer Saylor. Starting in the Fall 2015 semester, 4 students and 1 professor embarked on a journey to further refine and complete the Davidow website and app, and ultimately launch the app into the Google Play store.</p>
+        
+                    <p>The team began the semester by outlining their goals and researching how BLE devices and other similar technologies, like RFID and NFC tags, were being used. After exploring various academic journals and online articles, the team found several innovative ways to use bluetooth and NFC tags that helped inspire new features of the app.</p>
+        
+                    <p>Once the team learned a little bit about how other people were using this type of technology, they began their work on the Davidow app and website. You can follow their progress here on their Github page.</p>
+                </div>
+              </div><!-- close wrapper for all carousel slides -->
+    
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><!-- close carousel -->
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row" id="team">
+        <div class="col-md-12">
+            <h3>Our Team</h3> 
+            <a href="">
+                <div>
+                    <img src="img/upArrow.svg" class="upButton">
+                </div>
+            </a>
+        </div>
+    </div><!-- close row -->
+            
+    <div class="row">
+        <div class="col-md-12">
+    		<div class="center">
+                <div class="imgFloat img-container imageOverlay">
+                  <img src="img/dorgeron.jpg" alt="Dylan Orgeron" class="headshots picHover" id="dylanOrgeron">
+                    <div class="hoverLinks">
+                        <a href="https://www.linkedin.com/pub/dylan-orgeron/90/6a0/b90" target="_blank">
+                            <img class="personalLinks" src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Dylan on LinkedIn" />
+                        </a>
+                    </div> 
                   <h4>Dylan Orgeron</h4>
                   <h5>ATEC 2016</h5>
                 </div>
         
-                <div class="imgFloat">
-                  <img src="img/jnguyen.jpg" class="headshots clip-ellipse"> 
+                <div class="imgFloat img-container imageOverlay">
+                  <img src="img/jnguyen.jpg" alt="Judy Nguyen" class="headshots picHover" id="judyNguyen"> 
+                    <div class="hoverLinks">
+                        <a href="http://www.linkedin.com/pub/judy-nguyen/67/309/72a" target="_blank">
+                            <img class="personalLinks"  src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Judys LinkedIn"/>
+                        </a>
+                    </div>
                   <h4>Judy Nguyen</h4>
                   <h5>ATEC 2016</h5>
                 </div>
         
-                <div class="imgFloat">
-                  <img src="img/ssaylor.jpg" class="headshots clip-ellipse"> 
+                <div class="imgFloat img-container imageOverlay">
+                  <img src="img/dcarroll.jpg" alt="Dylan Carroll" class="headshots picHover" id="dylanCarroll"> 
+                    <div class="hoverLinks">
+                        <a href="https://twitter.com/D_C___" target="_blank">
+                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Dylan on Twitter" class="personalLinks"/>
+                        </a>
+                        <a href="https://www.linkedin.com/pub/dylan-carroll/98/749/1b" target="_blank">
+                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Dylan on  LinkedIn" class="personalLinks" />
+                        </a>
+                    </div>
+                  <h4>Dylan Carroll</h4>
+                  <h5>EMAC 2015</h5>
+                </div>
+        
+                <div class="imgFloat img-container imageOverlay">
+                  <img src="img/ssaylor.jpg" alt="Summer Saylor" class="headshots picHover" id="summerSaylor"> 
+                    <div class="hoverLinks">
+                        <a href="http://elsaylor.com/summersaylor/" target="_blank">
+                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Summers Website" class="personalLinks">
+                        </a>
+                        <a href="https://twitter.com/SaylorSummer" target="_blank">
+                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Summer on Twitter" class="personalLinks">
+                        </a>
+                        <a href="https://www.linkedin.com/in/summersaylor" target="_blank">
+                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Summer on LinkedIn" class="personalLinks">
+                        </a>
+                    </div>
                   <h4>Summer Saylor</h4>
                   <h5>ATEC 2016</h5>
                 </div>
-        	</div>
-            <div class="col-md-2"></div>
-		</div>
-
+            </div><!-- close wrapper div -->
+        </div>
+    </div><!-- close row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center">
+              <div class="imgFloat img-container imageOverlay">
+                <img src="img/lking.jpg" alt="Lance King" class="headshots picHover" id="lanceKing"> 
+                    <div class="hoverLinks">
+                    </div>
+                    <h4>Lance King</h4>
+                    <h5>Project Founder</h5>
+              </div> 
+               
+              <div class="imgFloat img-container imageOverlay">
+                <img src="img/cnazir.jpg" alt="Cassini Nazir" class="headshots picHover" id="cassiniNazir"> 
+                    <div class="hoverLinks">
+                      <a href="http://cassininazir.com/" target="_blank">
+                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Cassinis Website" class="personalLinks">
+                      </a>
+                      <a href="https://twitter.com/cassininazir" target="_blank">
+                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Cassini on Twitter" class="personalLinks">
+                      </a>
+                      <a href="https://www.linkedin.com/in/cassininazir" target="_blank">
+                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Cassini on LinkedIn" class="personalLinks">
+                      </a>
+                    </div>
+                <h4>Cassini Nazir</h4>
+                <h5>Project Coordinator</h5>
+              </div>
+              
+        	</div><!-- close wrapper div -->
+        </div>
+    </div><!-- close lance and cassini row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center">
+              <p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+            </div>
+        </div>
     </div>
-  	<div class="col-md-1"></div>
+    
+    
+    
 </div>
-
 </body>
 
-
-
-
-<div class="img-container right imageOverlay">
-            <img src="img/cnazir.jpg" alt="Cassini Nazir" class="picHover" id="cassiniNazir"/>
-            
-            <div class="hoverLinks">
-            <a href="http://cassininazir.com/" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Cassinis Website" class="personalLinks"></a>
-            <a href="https://twitter.com/cassininazir" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Cassini on Twitter" class="personalLinks"></a>
-            <a href="https://www.linkedin.com/in/cassininazir" target="_blank"><img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Cassini on LinkedIn" class="personalLinks"></a>
-          </div>
 </html>
