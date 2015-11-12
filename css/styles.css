@@ -9,11 +9,6 @@ blue: #4fc5e7;
 grey: #3b3c3e;
 white: #ebebeb;
 **********************/
-.center {
-    margin: auto;
-    width: 60%;
-    border:3px solid #73AD21;
-}
 .container{
 	background-color:white;	
 }
@@ -24,6 +19,8 @@ p{
 	font-family:Source Sans Pro, sans-serif;
 	font-size:1.1em;
 	font-weight:300;
+	margin-left:5%;
+	margin-right:5%;
 }
 #navBar{
 	background-color:#3b3c3e;
@@ -57,14 +54,25 @@ h1, h2, h3, h4, h5, h6{
 	font-weight:300;
 	text-transform:uppercase;
 }
+	h4{
+		margin-top:5%;	
+		margin-left:5%;
+	}
 #mission, #process, #team{
 	text-align:center;
-	padding-bottom:2%;	
 }
+	#mission{
+		margin-bottom:2%;	
+	}
+	#process, #team{
+		margin-top:2%;
+		margin-bottom:2%;
+	}
 .downButton{
 	width:5%;
 	float:right;
-	margin-top:-5%;	
+	margin-top:-4%;	
+	margin-right:3%;
 	position:relative;
 }
 	.downButton:hover{
@@ -85,6 +93,7 @@ h1, h2, h3, h4, h5, h6{
 	width:5%;
 	float:right;
 	margin-top:-5%;	
+	margin-right:3%;
 	position:relative;
 	z-index:1;
 }
@@ -108,7 +117,43 @@ h1, h2, h3, h4, h5, h6{
 .logos{
 	width:300px;
 }
+#footer{
+	background-color:#3B3C3E;	
+}
+#bird{
+	width:40px;	
+	display: block;
+    margin: auto;
+    padding-top: 15px;
+	padding-bottom: 15px;
+}
+	img#bird:hover{
+		opacity:.85
+	}
+#footerContent{
+	color:white;
+	text-align:center;	
+	letter-spacing:2px;
+	text-decoration: none;
+}
+	#footerContent :link{
+	color:white;
+	}
+	#footerContent :visited{
+	color:white;
+	}
+	#footerContent :hover{
+	color:#4FC5E7;	
+	}
+#footerText{
+	width:250px;
+	margin:auto;	
+}
 /******** PHOTOS *********/
+.center {
+    margin: auto;
+    width: 90%;
+}
 div.imgFloat{
 	width:230px;
 }
@@ -151,7 +196,11 @@ img.personalLinks{
 	.imageOverlay:hover .hoverLinks{
   		visibility:visible;
 	} 
-
+	div.img-container h4, div.img-container h5 {
+    margin-left: 0;
+	width:200px;
+    text-align: center;
+}
 /******** CAROUSEL *********/
 .carousel-control.left, .carousel-control.right{
 	background-image:none;	
@@ -169,5 +218,8 @@ img.personalLinks{
 	width:5%;	
 }
 .carousel-inner{
-	height:250px;	
+	height:auto;	
+}
+div.item, div.active h4{
+	margin-top:0%;	
 }
