@@ -22,6 +22,11 @@ p{
 	margin-left:5%;
 	margin-right:5%;
 }
+#logo{
+	width:10%;
+	display:inline;
+	vertical-align:sub;
+}
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
@@ -155,14 +160,12 @@ h1, h2, h3, h4, h5, h6{
     width: 90%;
 }
 div.imgFloat{
-	width:230px;
+	width:auto;
+	padding-left:30px;
 }
 .imgFloat{
 	float:left;
-	margin-bottom:10%;
-}
-.headshots{
-	width:200px;
+	margin-bottom:100px;
 }
 div.active{
 	padding-left:5em;
@@ -171,27 +174,27 @@ div.active{
 /*size of personal links*/	  
 img.personalLinks{
 	width:3em;
-	}
+}
 /*establish size of overlay*/
 .imageOverlay{
-  	width:200px;
 	height:300px;
-	}	
+	height:250px;
+}	
 /*establish size of links*/	
 .hoverLinks{
   	visibility:hidden;
-	height:300px;
+	height:230px;
 	width:200px;
 	background-color:#4fc5e7;
 	top:0;
 	left:0;
 	opacity:.8;
-	}
+}
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
   width:200px;
-  }
+}
 	/*make links show on hover*/
 	.imageOverlay:hover .hoverLinks{
   		visibility:visible;
@@ -201,6 +204,202 @@ img.personalLinks{
 	width:200px;
     text-align: center;
 }
+
+/******** HEADSHOT POPOUT LINKS *********/
+.links {
+  top: 100px;
+  left: 400px;
+  position: absolute;
+}
+.linksButton {
+  width: 50px;
+  position: relative;
+}
+.linkItem1 {
+  width: 30px;
+  position: relative;
+  visibility: hidden;
+}
+.linkItem2 {
+  width: 30px;
+  visibility: hidden;
+  position: relative;
+}
+.linkItem3 {
+  width: 30px;
+  visibility: hidden;
+  position: relative;
+}
+/*on click, show menu icon 1*/
+.linkItems1 {
+  visibility: visible !important;
+  /* !important overrides contradicting statements*/
+  
+  -webkit-animation: cssAnimation1 1.3s 1;
+  /*webkit-animation: "animation name" "duration" "number of iterations" */
+  
+  -moz-animation: cssAnimation1 1.3s 1;
+  -o-animation: cssAnimation1 1.3s 1;
+  animation: cssAnimation1 1.3s 1;
+  position: absolute;
+  /*keeps menu icons in last animated position*/
+  
+  animation-fill-mode: forwards;
+  /*keeps menu icons in last animated position*/
+}
+/*poopie - on click, show menu icon 1*/
+@-webkit-keyframes cssAnimation1 {
+  0% {
+    opacity: 0;
+    left: -60px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -250px;
+    top: -10px;
+  }
+  100% {
+    opacity: 1;
+    left: -210px;
+    top: -10px;
+  }
+}
+/*corn - on click, show menu icon 2*/
+.linkItems2 {
+  visibility: visible !important;
+  -webkit-animation: cssAnimation2 1.2s 1;
+  -moz-animation: cssAnimation2 1.3s 1;
+  -o-animation: cssAnimation2 1.3s 1;
+  animation: cssAnimation2 1.3s 1;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation2 {
+  0% {
+    opacity: 0;
+    left: -80px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -240px;
+    top: -10px;
+  }
+  100% {
+    opacity: 1;
+    left: -200px;
+    top: -10px;
+  }
+}
+/*ron swanson - on click, show menu icon 3*/
+.linkItems3 {
+  visibility: visible !important;
+  -webkit-animation: cssAnimation3 1.1s 1;
+  -moz-animation: cssAnimation3 1.3s 1;
+  -o-animation: cssAnimation3 1.3s 1;
+  animation: cssAnimation3 1.3s 1;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation3 {
+  0% {
+    opacity: 0;
+    left: -100px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -230px;
+    top: -10px;
+  }
+  100% {
+    opacity: 1;
+    left: -190px;
+    top: -10px;
+  }
+}
+/*on click, hide menu icon 1*/
+.linkItemsClose1 {
+  visibility: visible !important;
+  -webkit-animation: cssAnimationClose1 1.3s 1;
+  -moz-animation: cssAnimationClose1 1.3s 1;
+  -o-animation: cssAnimationClose1 1.3s 1;
+  animation: cssAnimationClose1 1.3s 1;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimationClose1 {
+  0% {
+    opacity: 1;
+    left: -210px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -250px;
+    top: -10px;
+  }
+  100% {
+    opacity: 0;
+    left: -50px;
+    top: -10px;
+  }
+}
+/*on click, hide menu icon 2*/
+.linkItemsClose2 {
+  visibility: visible !important;
+  -webkit-animation: cssAnimationClose2 1.2s 1;
+  -moz-animation: cssAnimationClose1 1.3s 1;
+  -o-animation: cssAnimationClose1 1.3s 1;
+  animation: cssAnimationClose1 1.3s 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimationClose2 {
+  0% {
+    opacity: 1;
+    left: -200px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -240px;
+    top: -10px;
+  }
+  100% {
+    opacity: 0;
+    left: -80px;
+    top: -10px;
+  }
+}
+/*on click, hide menu icon 3*/
+.linkItemsClose3 {
+  visibility: visible !important;
+  -webkit-animation: cssAnimationClose3 1.1s 1;
+  -moz-animation: cssAnimationClose1 1.3s 1;
+  -o-animation: cssAnimationClose1 1.3s 1;
+  animation: cssAnimationClose1 1.3s 1;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimationClose3 {
+  0% {
+    opacity: 1;
+    left: -190px;
+    top: -10px;
+  }
+  50% {
+    opacity: .9;
+    left: -230px;
+    top: -10px;
+  }
+  100% {
+    opacity: 0;
+    left: -110px;
+    top: -10px;
+  }
+}
+
+
 /******** CAROUSEL *********/
 .carousel-control.left, .carousel-control.right{
 	background-image:none;	
