@@ -22,16 +22,29 @@
 
 <body>
 <div class="container">
-    <div class="row" id="navBar">
-        <div class="col-md-4 col-sm-6">
-            <h2>The</h2> <img src="img/darkOption1.gif" id="logo"> <h2>avidow Project</h2>
+
+	<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h2 class="navbar-brand">The</h2><img src="img/darkOption1.gif" id="Dlogo"> <h2 class="navbar-brand">avidow Project</h2>
         </div>
-        <div class="col-md-8 col-sm-6">
-            <a href="#mission">Our Mission</a>
-            <a href="#process">Process</a>
-            <a href="#team">Our Team</a>
-        </div>
-    </div><!-- close row -->
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     
     <div class="row" id="mission">
         <div class="col-md-12">
@@ -48,21 +61,21 @@
         <div class="col-md-12">
             <p class="paragraph">The Davidow Project’s mission is to utilize Bluetooth Low Energy technology in order to interact with the Davidow Collection of artwork in the Arts and Technology building at the University of Texas at Dallas. Our app is currently under development, check here for updates on our progress…</p>
             <div class="row">
-                <div class="col-md-8" id="overviewProcess">
+                <div class="col-md-8 col-sm-8" id="overviewProcess">
                     <h4>Overview</h4>
                     <p>The personal collection of Dallas collector and educator Joan Davidow are showcased throughout the universities Edith O’Donnell Arts and Technology building. Typically faculty, students, and administrators glance at the pieces as they go about their day. When the passersby does stop to observe the works, the extent that they are able to interact with the pieces ends with as they leave. The goal of our project is to provide the user another means of engaging with the Davidow Collection as well as provide the viewer the ability locate other pieces of interest.</p>
                     <h4>Process</h4>
                     <p>To create the app we set up a research, user interface design, and code development team.The research team began by researching the intended users. documenting and mapping the location of the art pieces.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <img src="img/brandLogos.png" class="logos">
                 </div>
             </div>
                 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <img src="img/brandLogos2.png" class="logos">
                 </div>
-                <div class="col-md-8" id="craftImpact">
+                <div class="col-md-8 col-sm-8" id="craftImpact">
                     <h4>Craft</h4>
                     <p>An interactive app was developed to assist viewers of the Davidow collection in navigating the large gallery spaced throughout the ATEC building located in UTD. The coding was build from scratch using a combination of HTML, CSS and several other frameworks to deliver an interactive experience that would be fluid and responsive. The concept was to create a design that would represent the sophistication and detailed nature of the Davidow Collection. Ultimately the inclusion of the estimotes was used to make the experience one truly unique to the fundamental values of the ATEC building.</p>
                     <h4>Impact</h4>
@@ -136,7 +149,7 @@
     <div class="row" id="team">
         <div class="col-md-12">
             <h3>Our Team</h3> 
-            <a href="">
+            <a href="#navBar">
                 <div>
                     <img src="img/upArrow.svg" class="upButton">
                 </div>
@@ -147,112 +160,86 @@
     <div class="row">
         <div class="col-md-12">
     		<div class="center">
-                <div class="imgFloat img-container imageOverlay">
-                  <img src="img/dorgeron.png" alt="Dylan Orgeron" class="headshots picHover" id="dylanOrgeron">
+                <div class="imgFloat linksButton">
+                  <img src="img/dorgeron.png" alt="Dylan Orgeron" class="picHover" id="dylanOrgeron">
                     <div class="hoverLinks">
                         <a href="https://www.linkedin.com/pub/dylan-orgeron/90/6a0/b90" target="_blank">
-                            <img class="personalLinks" src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Dylan on LinkedIn" />
+                            <img src="img/linkedin.svg" alt="Dylan on LinkedIn" class="linkItem3">
                         </a>
                     </div> 
                   <h4>Dylan Orgeron</h4>
                   <h5>ATEC 2016</h5>
                 </div>
         
-                <div class="imgFloat img-container imageOverlay">
-                  <img src="img/jnguyen.png" alt="Judy Nguyen" class="headshots picHover" id="judyNguyen"> 
+                <div class="imgFloat linksButton">
+                  <img src="img/jnguyen.png" alt="Judy Nguyen" class="picHover" id="judyNguyen"> 
                     <div class="hoverLinks">
                         <a href="http://www.linkedin.com/pub/judy-nguyen/67/309/72a" target="_blank">
-                            <img class="personalLinks"  src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Judys LinkedIn"/>
+                            <img src="img/linkedin.svg" alt="Judys LinkedIn" class="linkItem3">
                         </a>
                     </div>
                   <h4>Judy Nguyen</h4>
                   <h5>ATEC 2016</h5>
                 </div>
         
-                <div class="imgFloat img-container imageOverlay">
-                  <img src="img/dcarroll.png" alt="Dylan Carroll" class="headshots picHover" id="dylanCarroll"> 
+                <div class="imgFloat linksButton">
+                  <img src="img/dcarroll.png" alt="Dylan Carroll" class="picHover" id="dylanCarroll"> 
                     <div class="hoverLinks">
                         <a href="https://twitter.com/D_C___" target="_blank">
-                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Dylan on Twitter" class="personalLinks"/>
+                            <img src="img/twitter.svg" alt="Dylan on Twitter" class="linkItem2">
                         </a>
                         <a href="https://www.linkedin.com/pub/dylan-carroll/98/749/1b" target="_blank">
-                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Dylan on  LinkedIn" class="personalLinks" />
+                            <img src="img/linkedin.svg" alt="Dylan on  LinkedIn" class="linkItem3">
                         </a>
                     </div>
                   <h4>Dylan Carroll</h4>
                   <h5>EMAC 2015</h5>
                 </div>
         
-                <div class="imgFloat img-container imageOverlay">
-                  <img src="img/ssaylor.png" alt="Summer Saylor" class="headshots picHover" id="summerSaylor"> 
+                <div class="imgFloat linksButton">
+                  <img src="img/ssaylor.png" alt="Summer Saylor" class="picHover" id="summerSaylor"> 
                     <div class="hoverLinks">
                         <a href="http://elsaylor.com/summersaylor/" target="_blank">
-                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Summers Website" class="personalLinks">
+                            <img src="img/portfolio.svg" alt="Summers Website" class="linkItem1">
                         </a>
                         <a href="https://twitter.com/SaylorSummer" target="_blank">
-                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Summer on Twitter" class="personalLinks">
+                            <img src="img/twitter.svg" alt="Summer on Twitter" class="linkItem2">
                         </a>
                         <a href="https://www.linkedin.com/in/summersaylor" target="_blank">
-                            <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Summer on LinkedIn" class="personalLinks">
+                            <img src="img/linkedin.svg" alt="Summer on LinkedIn" class="linkItem3">
                         </a>
                     </div>
                   <h4>Summer Saylor</h4>
                   <h5>ATEC 2016</h5>
                 </div>
                 
-                <div class="imgFloat img-container imageOverlay">
-                <img src="img/lking.png" alt="Lance King" class="headshots picHover" id="lanceKing"> 
+                <div class="imgFloat linksButton">
+                <img src="img/lking.png" alt="Lance King" class="picHover" id="lanceKing"> 
                     <div class="hoverLinks"></div>
                     <h4>Lance King</h4>
                     <h5>Project Founder</h5>
               	</div> 
                
-              <div class="imgFloat img-container imageOverlay linksButton">
-                <img src="img/cnazir.png" alt="Cassini Nazir" class="headshots picHover" id="cassiniNazir"> 
+              <div class="imgFloat linksButton">
+                <img src="img/cnazir.png" alt="Cassini Nazir" class="picHover" id="cassiniNazir"> 
                     <div class="hoverLinks">
                       <a href="http://cassininazir.com/" target="_blank">
-                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/website.png" alt="Cassinis Website" class="personalLinks">
+                        <img src="img/portfolio.svg" alt="Cassinis Website" class="linkItem1">
                       </a>
                       <a href="https://twitter.com/cassininazir" target="_blank">
-                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/twitter-bird.png" alt="Cassini on Twitter" class="personalLinks">
+                        <img src="img/twitter.svg" alt="Cassini on Twitter" class="linkItem2">
                       </a>
                       <a href="https://www.linkedin.com/in/cassininazir" target="_blank">
-                        <img src="http://davidow.atec.io/wp-content/uploads/2015/09/linked-in.png" alt="Cassini on LinkedIn" class="personalLinks">
+                        <img src="img/linkedin.svg" alt="Cassini on LinkedIn" class="linkItem3">
                       </a>
                     </div>
                 <h4>Cassini Nazir</h4>
                 <h5>Project Coordinator</h5>
               </div>
-                
-
-
-            <div class="links">
-
-                <img class="linksButton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/BYR_color_wheel.svg/2000px-BYR_color_wheel.svg.png" />
-
-                <a href="#"><img class="linkItem1" src="http://orig05.deviantart.net/4489/f/2015/220/1/2/png_de_emojis_del_poop_by_dubraskaedicion-d94sqz7.png"></a>
-
-                <a href="#"><img class="linkItem2" src="http://www.veryicon.com/icon/png/Holiday/Iconfactory%20Thanksgiving%202008/Corn.png"></a>
-
-                <a href="#"><img class="linkItem3" src="http://whatwouldronsay.com/img/ron-2.png"></a>
-
-              </div>
-
-
-
             </div><!-- close wrapper div -->
         </div>
     </div><!-- close row -->
-    
-    <div class="row">
-        <div class="col-md-12">
-            <div class="center">
-              
-              
-        	</div><!-- close wrapper div -->
-        </div>
-    </div><!-- close lance and cassini row -->
-    
+        
     <div class="row" id="footer">
         <div class="col-md-12">
             <a href="https://twitter.com/utddavidow" target="_blank" id="footerContent">
@@ -274,18 +261,26 @@
     //need to add link imgs to website!!!!!!!!!
     var open = false;
 
-    $(".linksButton").click(function() {
+    $("div.imgFloat").click(function() {
 
       if (open == false) {
-        $(".linkItem1").toggleClass("linkItems1");
-        $(".linkItem2").toggleClass("linkItems2");
-        $(".linkItem3").toggleClass("linkItems3");
+        $(".linkItem1").addClass("linkItems1");
+        $(".linkItem2").addClass("linkItems2");
+        $(".linkItem3").addClass("linkItems3");
+		
+		$(".linkItem1").removeClass("linkItemsClose1");
+        $(".linkItem2").removeClass("linkItemsClose2");
+        $(".linkItem3").removeClass("linkItemsClose3");
 
         open = true;
       } else {
-        $(".linkItem1").toggleClass("linkItemsClose1");
-        $(".linkItem2").toggleClass("linkItemsClose2");
-        $(".linkItem3").toggleClass("linkItemsClose3");
+        $(".linkItem1").addClass("linkItemsClose1");
+        $(".linkItem2").addClass("linkItemsClose2");
+        $(".linkItem3").addClass("linkItemsClose3");
+		
+		$(".linkItem1").removeClass("linkItems1");
+        $(".linkItem2").removeClass("linkItems2");
+        $(".linkItem3").removeClass("linkItems3");
 
         open = false;
       }

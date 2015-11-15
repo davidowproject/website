@@ -22,14 +22,48 @@ p{
 	margin-left:5%;
 	margin-right:5%;
 }
-#logo{
-	width:10%;
-	display:inline;
-	vertical-align:sub;
+#home{
+	
 }
+#Dlogo{
+	width:40px;
+	display:inline;
+	float:left;
+	line-height: 20px;
+    margin-top: 15px;
+    padding-right: 2px;
+    padding-top: 7px;
+}
+.navbar-default {
+    background-color: #3B3C3E;
+    margin-left: -15px;
+    margin-right: -15px;
+	font-family:Source Sans Pro, sans-serif;
+	font-size:1.2em;
+}
+.navbar-default .navbar-brand {
+    color: #ebebeb;
+	font-family:"Oswald", sans-serif;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-size:1.7em;	
+	display:inline;
+	padding-left:0px;
+}
+.navbar-default .navbar-nav>li>a{
+	font-family:Source Sans Pro, sans-serif;
+	color:#ebebeb;
+}
+	.navbar-default .navbar-nav>li>a:hover{
+		font-family:Source Sans Pro, sans-serif;
+		color:#4fc5e7;
+		text-decoration:none;
+	}
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
+	height:80px;
 }
 	#navBar h2{
 		font-family:"Oswald", sans-serif;
@@ -37,7 +71,7 @@ p{
 		letter-spacing:2px;
 		text-transform:uppercase;
 		font-size:2em;	
-		padding-left:5%;
+		display:inline;
 	}
 	#navBar .col-md-8{
 		text-align:right;	
@@ -119,9 +153,14 @@ h1, h2, h3, h4, h5, h6{
 .paragraph{
 	padding-left:5%;	
 }
+@media (max-width: 768px)  {.logos
+		{width:10em;	}
+	}
 .logos{
-	width:300px;
+	max-width:100%;
+	height:auto;
 }
+	
 #footer{
 	background-color:#3B3C3E;	
 }
@@ -162,24 +201,14 @@ h1, h2, h3, h4, h5, h6{
 div.imgFloat{
 	width:auto;
 	padding-left:30px;
-}
-.imgFloat{
 	float:left;
 	margin-bottom:100px;
+	height:300px;
 }
 div.active{
 	padding-left:5em;
 	padding-right:5em;	
 }
-/*size of personal links*/	  
-img.personalLinks{
-	width:3em;
-}
-/*establish size of overlay*/
-.imageOverlay{
-	height:300px;
-	height:250px;
-}	
 /*establish size of links*/	
 .hoverLinks{
   	visibility:hidden;
@@ -195,218 +224,181 @@ img.personalLinks{
   position:absolute;
   width:200px;
 }
-	/*make links show on hover*/
-	.imageOverlay:hover .hoverLinks{
-  		visibility:visible;
-	} 
-	div.img-container h4, div.img-container h5 {
+	div.imgFloat h4, div.imgFloat h5 {
     margin-left: 0;
 	width:200px;
     text-align: center;
 }
 
 /******** HEADSHOT POPOUT LINKS *********/
-.links {
-  top: 100px;
-  left: 400px;
-  position: absolute;
-}
 .linksButton {
-  width: 50px;
   position: relative;
 }
-.linkItem1 {
+.linkItem1 ,.linkItem2, .linkItem3 {
   width: 30px;
   position: relative;
   visibility: hidden;
-}
-.linkItem2 {
-  width: 30px;
-  visibility: hidden;
-  position: relative;
-}
-.linkItem3 {
-  width: 30px;
-  visibility: hidden;
-  position: relative;
 }
 /*on click, show menu icon 1*/
 .linkItems1 {
   visibility: visible !important;
-  /* !important overrides contradicting statements*/
-  
-  -webkit-animation: cssAnimation1 1.3s 1;
-  /*webkit-animation: "animation name" "duration" "number of iterations" */
-  
-  -moz-animation: cssAnimation1 1.3s 1;
-  -o-animation: cssAnimation1 1.3s 1;
-  animation: cssAnimation1 1.3s 1;
-  position: absolute;
-  /*keeps menu icons in last animated position*/
-  
+  -webkit-animation: cssAnimation1 1s 1;  
+  -moz-animation: cssAnimation1 1s 1;
+  -o-animation: cssAnimation1 1s 1;
+  animation: cssAnimation1 1s 1;
+  position: absolute;  
   animation-fill-mode: forwards;
-  /*keeps menu icons in last animated position*/
 }
-/*poopie - on click, show menu icon 1*/
+/*portfolio - on click, show menu icon 1*/
 @-webkit-keyframes cssAnimation1 {
   0% {
     opacity: 0;
-    left: -60px;
-    top: -10px;
+	left:0px;
   }
   50% {
-    opacity: .9;
-    left: -250px;
-    top: -10px;
+    opacity: .7;
+    left: 280px;
   }
   100% {
     opacity: 1;
-    left: -210px;
-    top: -10px;
+    left: 200px;
   }
 }
-/*corn - on click, show menu icon 2*/
+/*twitter - on click, show menu icon 2*/
 .linkItems2 {
   visibility: visible !important;
-  -webkit-animation: cssAnimation2 1.2s 1;
-  -moz-animation: cssAnimation2 1.3s 1;
-  -o-animation: cssAnimation2 1.3s 1;
-  animation: cssAnimation2 1.3s 1;
+  -webkit-animation: cssAnimation2 1.1s 1;
+  -moz-animation: cssAnimation2 1.1s 1;
+  -o-animation: cssAnimation2 1.1s 1;
+  animation: cssAnimation2 1.1s 1;
   position: absolute;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes cssAnimation2 {
   0% {
     opacity: 0;
-    left: -80px;
-    top: -10px;
+	left:0px;
+	top:50px;
   }
   50% {
-    opacity: .9;
-    left: -240px;
-    top: -10px;
+    opacity: .7;
+    left: 260px;
+	top:50px;
   }
   100% {
     opacity: 1;
-    left: -200px;
-    top: -10px;
+    left: 230px;
+	top:50px;
   }
 }
-/*ron swanson - on click, show menu icon 3*/
+/*linkedin - on click, show menu icon 3*/
 .linkItems3 {
   visibility: visible !important;
-  -webkit-animation: cssAnimation3 1.1s 1;
-  -moz-animation: cssAnimation3 1.3s 1;
-  -o-animation: cssAnimation3 1.3s 1;
-  animation: cssAnimation3 1.3s 1;
+  -webkit-animation: cssAnimation3 1.2s 1;
+  -moz-animation: cssAnimation3 1.2s 1;
+  -o-animation: cssAnimation3 1.2s 1;
+  animation: cssAnimation3 1.2s 1;
   position: absolute;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes cssAnimation3 {
   0% {
     opacity: 0;
-    left: -100px;
-    top: -10px;
+	left:0px;
+	top:100px;
   }
   50% {
-    opacity: .9;
-    left: -230px;
-    top: -10px;
+    opacity: .7;
+    left: 230px;
+	top:100px;
   }
   100% {
     opacity: 1;
-    left: -190px;
-    top: -10px;
+    left: 200px;
+	top:100px;
   }
 }
-/*on click, hide menu icon 1*/
+/*portfolio - on click, hide menu icon 1*/
 .linkItemsClose1 {
   visibility: visible !important;
-  -webkit-animation: cssAnimationClose1 1.3s 1;
-  -moz-animation: cssAnimationClose1 1.3s 1;
-  -o-animation: cssAnimationClose1 1.3s 1;
-  animation: cssAnimationClose1 1.3s 1;
+  -webkit-animation: cssAnimationClose1 1s 1;
+  -moz-animation: cssAnimationClose1 1s 1;
+  -o-animation: cssAnimationClose1 1s 1;
+  animation: cssAnimationClose1 1s 1;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes cssAnimationClose1 {
   0% {
     opacity: 1;
-    left: -210px;
-    top: -10px;
+    left: 160px;
   }
   50% {
-    opacity: .9;
-    left: -250px;
-    top: -10px;
+    opacity: .7;
+    left: 320px;
   }
   100% {
     opacity: 0;
-    left: -50px;
-    top: -10px;
+	left:0px;
   }
 }
-/*on click, hide menu icon 2*/
+/*twitter - on click, hide menu icon 2*/
 .linkItemsClose2 {
   visibility: visible !important;
-  -webkit-animation: cssAnimationClose2 1.2s 1;
-  -moz-animation: cssAnimationClose1 1.3s 1;
-  -o-animation: cssAnimationClose1 1.3s 1;
-  animation: cssAnimationClose1 1.3s 1;
+  -webkit-animation: cssAnimationClose2 1.1s 1;
+  -moz-animation: cssAnimationClose2 1.1s 1;
+  -o-animation: cssAnimationClose2 1.1s 1;
+  animation: cssAnimationClose2 1.1s 1;
   -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes cssAnimationClose2 {
   0% {
     opacity: 1;
-    left: -200px;
-    top: -10px;
+    left: 170px;
+	top:50px;
   }
   50% {
-    opacity: .9;
-    left: -240px;
-    top: -10px;
+    opacity: .7;
+    left: 250px;
+	top:50px;
   }
   100% {
     opacity: 0;
-    left: -80px;
-    top: -10px;
+	left:0px;
+	top:50px;
   }
 }
-/*on click, hide menu icon 3*/
+/*linkedin - on click, hide menu icon 3*/
 .linkItemsClose3 {
   visibility: visible !important;
-  -webkit-animation: cssAnimationClose3 1.1s 1;
-  -moz-animation: cssAnimationClose1 1.3s 1;
-  -o-animation: cssAnimationClose1 1.3s 1;
-  animation: cssAnimationClose1 1.3s 1;
+  -webkit-animation: cssAnimationClose3 1.2s 1;
+  -moz-animation: cssAnimationClose3 1.2s 1;
+  -o-animation: cssAnimationClose3 1.2s 1;
+  animation: cssAnimationClose3 1.2s 1;
   animation-fill-mode: forwards;
 }
 @-webkit-keyframes cssAnimationClose3 {
   0% {
     opacity: 1;
-    left: -190px;
-    top: -10px;
+    left: 100px;
+	top:100px;
   }
   50% {
-    opacity: .9;
-    left: -230px;
-    top: -10px;
+    opacity: .7;
+    left: 180px;
+	top:100px;
   }
   100% {
     opacity: 0;
-    left: -110px;
-    top: -10px;
+	left:0px;
+	top:100px;
   }
 }
-
 
 /******** CAROUSEL *********/
 .carousel-control.left, .carousel-control.right{
 	background-image:none;	
 }
-/*.carousel-indicators{
-	bottom:-20px;
-}*/
 .carousel-indicators li{
 	border:1px solid #ebebeb;	
 }
