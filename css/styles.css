@@ -253,15 +253,20 @@ div.active{
 @-webkit-keyframes cssAnimation1 {
   0% {
     opacity: 0;
-	left:0px;
+	bottom:0px;
+	left:60px;
   }
   50% {
-    opacity: .7;
-    left: 280px;
+    opacity: .2;
+    bottom: 300px;
+  }
+  70%{
+	opacity: .7; 
   }
   100% {
     opacity: 1;
-    left: 200px;
+    bottom: 290px;
+	left:150px;
   }
 }
 /*twitter - on click, show menu icon 2*/
@@ -277,18 +282,20 @@ div.active{
 @-webkit-keyframes cssAnimation2 {
   0% {
     opacity: 0;
-	left:0px;
-	top:50px;
+	left:90px;
+	bottom:50px;
   }
   50% {
-    opacity: .7;
-    left: 260px;
-	top:50px;
+    opacity: .2;
+	bottom:300px;
+  }
+  70%{
+	opacity: .7; 
   }
   100% {
     opacity: 1;
-    left: 230px;
-	top:50px;
+    left: 193px;
+	bottom:270px;
   }
 }
 /*linkedin - on click, show menu icon 3*/
@@ -305,17 +312,19 @@ div.active{
   0% {
     opacity: 0;
 	left:0px;
-	top:100px;
+	bottom:100px;
   }
   50% {
-    opacity: .7;
-    left: 230px;
-	top:100px;
+    opacity: .2;
+	bottom:260px;
+  }
+  70%{
+	opacity: .7; 
   }
   100% {
     opacity: 1;
-    left: 200px;
-	top:100px;
+    left: 220px;
+	bottom:235px;
   }
 }
 /*portfolio - on click, hide menu icon 1*/
@@ -330,15 +339,17 @@ div.active{
 @-webkit-keyframes cssAnimationClose1 {
   0% {
     opacity: 1;
-    left: 160px;
+    bottom: 0px;
+	left:150px;
   }
-  50% {
-    opacity: .7;
-    left: 320px;
+  20% {
+    opacity: .3;
+	bottom: 30px;
   }
   100% {
     opacity: 0;
-	left:0px;
+	bottom:-100px;
+	left:-20px;
   }
 }
 /*twitter - on click, hide menu icon 2*/
@@ -354,18 +365,17 @@ div.active{
 @-webkit-keyframes cssAnimationClose2 {
   0% {
     opacity: 1;
-    left: 170px;
-	top:50px;
+    bottom: 0px;
+	left:150px;
   }
-  50% {
-    opacity: .7;
-    left: 250px;
-	top:50px;
+  20% {
+    opacity: .3;
+	bottom: 45px;
   }
   100% {
     opacity: 0;
-	left:0px;
-	top:50px;
+	bottom:-100px;
+	left:-10px;
   }
 }
 /*linkedin - on click, hide menu icon 3*/
@@ -380,18 +390,17 @@ div.active{
 @-webkit-keyframes cssAnimationClose3 {
   0% {
     opacity: 1;
-    left: 100px;
-	top:100px;
+    bottom: -40px;
+	left:155px;
   }
-  50% {
-    opacity: .7;
-    left: 180px;
-	top:100px;
+  20% {
+    opacity: .3;
+	bottom: 20px;
   }
   100% {
     opacity: 0;
+	bottom:-100px;
 	left:0px;
-	top:100px;
   }
 }
 
