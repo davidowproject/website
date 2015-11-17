@@ -160,6 +160,7 @@
     <div class="row">
         <div class="col-md-12">
     		<div class="center">
+            
                 <div class="imgFloat linksButton">
                   <img src="img/dorgeron.png" alt="Dylan Orgeron" class="picHover" id="dylanOrgeron">
                     <div class="hoverLinks">
@@ -236,9 +237,43 @@
                 <h4>Cassini Nazir</h4>
                 <h5>Project Coordinator</h5>
               </div>
+              
+              
+			<div id="teamButton">
+              	<p>Wanna see everyone who helped make this project possible? Click here to see the other contributors.</p>
+            </div>
+              
             </div><!-- close wrapper div -->
         </div>
     </div><!-- close row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+    		<div class="center">
+    			              
+                              
+                              
+              <div class="imgFloat linksButton">
+                <img src="img/" alt="" class="picHover" id=""> 
+                    <div class="hoverLinks">
+                      <a href="" target="_blank">
+                        <img src="img/portfolio.svg" alt="" class="linkItem1">
+                      </a>
+                      <a href="" target="_blank">
+                        <img src="img/twitter.svg" alt="" class="linkItem2">
+                      </a>
+                      <a href="" target="_blank">
+                        <img src="img/linkedin.svg" alt="" class="linkItem3">
+                      </a>
+                    </div>
+                <h4></h4>
+                <h5></h5>
+              </div>
+        
+        	</div><!-- close wrapper div -->
+        </div>
+    </div><!-- close row -->
+        
         
     <div class="row" id="footer">
         <div class="col-md-12">
@@ -252,10 +287,25 @@
 </div>
 </body>
 <script>
+
+$( document ).ready(function() {
 	//keep carousel from auto sliding
 	$('.carousel').carousel({
     interval: false
 	}) 
+
+	//on page load, hide other team members
+	$("#teamMembers").hide();
+	
+	//on click, show other group members
+	$("#teamMembers").click(function(){
+		$(this).show();
+	});
+	
+	//on click, hide other group members
+	$("#teamMembers").click(function(){
+		$(this).hide();
+	});
 
     //pop out links on headshots
     //need to add link imgs to website!!!!!!!!!
@@ -285,7 +335,7 @@
         open = false;
       }
     });
-
+});
 
 </script>
 
