@@ -13,15 +13,27 @@ white: #ebebeb;
 	background-color:white;	
 }
 body{
-	background-color:#ebebeb;
+	background-color:#fff
 }
 p{
-	font-family:Source Sans Pro, sans-serif;
+	font-family:"Source Sans Pro", sans-serif;
 	font-size:1.1em;
 	font-weight:300;
 	margin-left:5%;
 	margin-right:5%;
 }
+
+.navbar-default{
+background-color: #fff;
+border-color:#fff;
+}
+
+h2{
+font-size:3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 #home{
 	
 }
@@ -35,10 +47,10 @@ p{
     padding-top: 7px;
 }
 .navbar-default {
-    background-color: #3B3C3E;
+   
     margin-left: -15px;
     margin-right: -15px;
-	font-family:Source Sans Pro, sans-serif;
+	font-family:"Source Sans Pro", sans-serif;
 	font-size:1.2em;
 }
 .navbar-default .navbar-brand {
@@ -52,14 +64,18 @@ p{
 	padding-left:0px;
 }
 .navbar-default .navbar-nav>li>a{
-	font-family:Source Sans Pro, sans-serif;
-	color:#ebebeb;
+	font-family:"Source Sans Pro", sans-serif;
+	color:#333;
+    font-size:25px;
 }
 	.navbar-default .navbar-nav>li>a:hover{
-		font-family:Source Sans Pro, sans-serif;
+		font-family:""Source Sans Pro"", sans-serif;
 		color:#4fc5e7;
 		text-decoration:none;
 	}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+padding:1em;}
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
@@ -77,26 +93,18 @@ p{
 		text-align:right;	
 	}
 	#navBar a{
-		font-family:Source Sans Pro, sans-serif;
+		font-family:"Source Sans Pro", sans-serif;
 		font-size:1.2em;
 		color:#ebebeb;
 		padding-right:5%;
 	}
 		#navBar a:hover{
-		font-family:Source Sans Pro, sans-serif;
+		font-family:"Source Sans Pro", sans-serif;
 		color:#4fc5e7;
 		text-decoration:none;
 	}
 
-h1, h2, h3, h4, h5, h6{
-	font-family:Oswald, sans-serif;
-	font-weight:300;
-	text-transform:uppercase;
-}
-	h4{
-		margin-top:5%;	
-		margin-left:5%;
-	}
+
 #mission, #process, #team{
 	text-align:center;
 }
@@ -222,7 +230,8 @@ div.active{
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
-  width:200px;
+  width:150px;
+    border-radius:50%;
 }
 	div.imgFloat h4, div.imgFloat h5 {
     margin-left: 0;
