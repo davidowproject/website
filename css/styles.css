@@ -37,6 +37,9 @@ font-size:3em;
 #home{
 	
 }
+/***********************
+NAV BAR
+***********************/
 #Dlogo{
 	width:40px;
 	display:inline;
@@ -103,8 +106,23 @@ padding:1em;}
 		color:#4fc5e7;
 		text-decoration:none;
 	}
+<<<<<<< HEAD
 
 
+=======
+/***********************
+CONTENT
+***********************/
+h1, h2, h3, h4, h5, h6{
+	font-family:Oswald, sans-serif;
+	font-weight:300;
+	text-transform:uppercase;
+}
+	h4{
+		margin-top:5%;	
+		margin-left:5%;
+	}
+>>>>>>> origin/master
 #mission, #process, #team{
 	text-align:center;
 }
@@ -168,40 +186,30 @@ padding:1em;}
 	max-width:100%;
 	height:auto;
 }
-	
-#footer{
-	background-color:#3B3C3E;	
+/***********************
+CAROUSEL
+***********************/
+.carousel-control.left, .carousel-control.right{
+	background-image:none;	
 }
-#bird{
-	width:40px;	
-	display: block;
-    margin: auto;
-    padding-top: 15px;
-	padding-bottom: 15px;
+.carousel-indicators li{
+	border:1px solid #ebebeb;	
 }
-	img#bird:hover{
-		opacity:.85
+	.carousel-indicators .active{
+	background-color:#4fc5e7;	
 	}
-#footerContent{
-	color:white;
-	text-align:center;	
-	letter-spacing:2px;
-	text-decoration: none;
+.carousel-control{
+	width:5%;	
 }
-	#footerContent :link{
-	color:white;
-	}
-	#footerContent :visited{
-	color:white;
-	}
-	#footerContent :hover{
-	color:#4FC5E7;	
-	}
-#footerText{
-	width:250px;
-	margin:auto;	
+.carousel-inner{
+	height:auto;	
 }
-/******** PHOTOS *********/
+div.item, div.active h4{
+	margin-top:0%;	
+}
+/***********************
+PHOTOS
+***********************/
 .center {
     margin: auto;
     width: 90%;
@@ -230,8 +238,13 @@ div.active{
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
+<<<<<<< HEAD
   width:150px;
     border-radius:50%;
+=======
+  width:200px;
+  cursor: pointer;
+>>>>>>> origin/master
 }
 	div.imgFloat h4, div.imgFloat h5 {
     margin-left: 0;
@@ -412,23 +425,52 @@ div.active{
 	left:0px;
   }
 }
-
-/******** CAROUSEL *********/
-.carousel-control.left, .carousel-control.right{
-	background-image:none;	
+#teamButton{
+	margin-left: 5%;
+	height:100px;
+	width:270px;
+	float:left;
+	cursor:pointer;
+	text-align:center;
 }
-.carousel-indicators li{
-	border:1px solid #ebebeb;	
-}
-	.carousel-indicators .active{
-	background-color:#4fc5e7;	
+	#teamButton p{
+		border:2px solid #4FC5E7;
+	border-radius:5px;
+	color:#4FC5E7;
 	}
-.carousel-control{
-	width:5%;	
+
+/***********************
+FOOTER
+***********************/	
+#footer{
+	background-color:#3B3C3E;	
 }
-.carousel-inner{
-	height:auto;	
+#bird{
+	width:40px;	
+	display: block;
+    margin: auto;
+    padding-top: 15px;
+	padding-bottom: 15px;
 }
-div.item, div.active h4{
-	margin-top:0%;	
+	img#bird:hover{
+		opacity:.85
+	}
+#footerContent{
+	color:white;
+	text-align:center;	
+	letter-spacing:2px;
+	text-decoration: none;
+}
+	#footerContent :link{
+	color:white;
+	}
+	#footerContent :visited{
+	color:white;
+	}
+	#footerContent :hover{
+	color:#4FC5E7;	
+	}
+#footerText{
+	width:250px;
+	margin:auto;	
 }
