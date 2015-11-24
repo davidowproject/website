@@ -17,13 +17,14 @@
 
 <!-- link to custom styles -->
 <link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 <div class="container">
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default" id="nav">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -33,11 +34,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h2 class="navbar-brand">The</h2><img src="img/darkOption1.gif" id="Dlogo"> <h2 class="navbar-brand">avidow Project</h2>
+          <h2>The Davidow Project</h2>
         </div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav navbar-right">
+    	  <ul class="nav navbar-nav navbar-right">
             <li><a href="#mission">Our Mission</a></li>
             <li><a href="#process">Process</a></li>
             <li><a href="#team">Our Team</a></li>
@@ -149,7 +150,7 @@
     <div class="row" id="team">
         <div class="col-md-12">
             <h3>Our Team</h3> 
-            <a href="#navBar">
+            <a href="#nav">
                 <div>
                     <img src="img/upArrow.svg" class="upButton">
                 </div>
@@ -240,39 +241,243 @@
               
               
 			<div id="teamButton">
-              	<p>Wanna see everyone who helped make this project possible? Click here to see the other contributors.</p>
+              	<p id="teamButtonMessage">Wanna see everyone who helped make this project possible? Click here to see the other contributors.</p>
             </div>
-              
+
             </div><!-- close wrapper div -->
         </div>
     </div><!-- close row -->
     
-    <div class="row">
+    
+    <!-- start code team members -->
+     <div class="row otherTeamMembers" id="codeTeam">
         <div class="col-md-12">
-    		<div class="center">
-    			              
-                              
-                              
-              <div class="imgFloat linksButton">
-                <img src="img/" alt="" class="picHover" id=""> 
-                    <div class="hoverLinks">
-                      <a href="" target="_blank">
-                        <img src="img/portfolio.svg" alt="" class="linkItem1">
-                      </a>
-                      <a href="" target="_blank">
-                        <img src="img/twitter.svg" alt="" class="linkItem2">
-                      </a>
-                      <a href="" target="_blank">
-                        <img src="img/linkedin.svg" alt="" class="linkItem3">
-                      </a>
-                    </div>
-                <h4></h4>
-                <h5></h5>
-              </div>
-        
-        	</div><!-- close wrapper div -->
+            <h3>Code Team</h3> 
+            <a href="#team">
+                <div>
+                </div>
+            </a>
         </div>
     </div><!-- close row -->
+
+    <div class="row otherTeamMembers">
+        <div class="col-md-12">
+            <div class="center">
+
+            <div class="imgFloat linksButton">
+                <img src="img/lmoon.png" alt="Lina Moon" class="picHover" id="linaMoon"> 
+                    <div class="hoverLinks">
+                      <a href="http://linamoon.me/" target="_blank">
+                        <img src="img/portfolio.svg" alt="Linas Website" class="linkItem1">
+                      </a>
+                      <a href="https://twitter.com/search?q=%40linaisamoon&amp;src=typd" target="_blank">
+                        <img src="img/twitter.svg" alt="Lina on Twitter" class="linkItem2">
+                      </a>
+                      <a href="https://www.linkedin.com/in/linamoon" target="_blank">
+                        <img src="img/linkedin.svg" alt="Lina on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Lina Moon</h4>
+                <h5>EMAC 2017</h5>
+              </div>
+
+			<div class="imgFloat linksButton">
+                <img src="img/dgallagher.png" alt="Duncan Gallagher" class="picHover" id="duncanGallagher"> 
+                    <div class="hoverLinks">
+                      <a href="http://www.adunkadu.com/" target="_blank">
+                        <img src="img/portfolio.svg" alt="Duncans Website" class="linkItem1">
+                      </a>
+                    </div>
+                <h4>Duncan Gallagher</h4>
+                <h5>EMAC 2017</h5>
+              </div>
+
+			<div class="imgFloat linksButton">
+                <img src="img/egrams.png" alt="Emily Grams" class="picHover" id="emilyGrams"> 
+                    <div class="hoverLinks">
+                      <a href="http://ejgrams.com" target="_blank">
+                        <img src="img/portfolio.svg" alt="Emilys Website" class="linkItem1">
+                      </a>
+                    </div>
+                <h4>Emily Grams</h4>
+                <h5>ATEC 2015</h5>
+              </div>
+
+			<div class="imgFloat linksButton">
+                <img src="img/jrobertson.png" alt="Jeremy Robertson" class="picHover" id="Jeremy Robertson"> 
+                    <div class="hoverLinks">
+                      <a href="https://www.linkedin.com/pub/jeremy-robertson/105/a62/802" target="_blank">
+                        <img src="img/linkedin.svg" alt="Jeremy on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Jeremy Robertson</h4>
+                <h5>ATEC 2015</h5>
+              </div>
+
+			<div class="imgFloat linksButton">
+                <img src="img/cyeow.png" alt="Clarice Yeow" class="picHover" id="clariceYeow"> 
+                    <div class="hoverLinks">
+                    </div>
+                <h4>Clarice Yeow</h4>
+                <h5>ATEC 2016</h5>
+              </div>
+
+			<div class="imgFloat linksButton">
+                <img src="img/jdoyle.png" alt="James Doyle" class="picHover" id="jamesDoyle"> 
+                    <div class="hoverLinks">
+                    </div>
+                <h4>James Doyle</h4>
+                <h5>ATEC 2015</h5>
+              </div>
+
+            </div><!-- close wrapper div -->
+        </div>
+    </div><!-- close code team members row -->                 
+                              
+    
+    <!-- start research team members -->
+     <div class="row otherTeamMembers" id="uiTeam">
+        <div class="col-md-12">
+            <h3>User Interface Team</h3> 
+            <a href="#team">
+                <div>
+                </div>
+            </a>
+        </div>
+    </div><!-- close row -->
+
+    <div class="row otherTeamMembers">
+        <div class="col-md-12">
+    		<div class="center">
+    
+    		<div class="imgFloat linksButton">
+                <img src="img/asparks.png" alt="Allison Sparks" class="picHover" id="allisonSparks"> 
+                    <div class="hoverLinks">
+                      <a href="https://twitter.com/Allison_Sparks" target="_blank">
+                        <img src="img/twitter.svg" alt="Allison on Twitter" class="linkItem2">
+                      </a>
+                    </div>
+                <h4>Allison Sparks</h4>
+                <h5>EMAC 2016</h5>
+              </div>
+    
+    		<div class="imgFloat linksButton">
+                <img src="img/ctimmons.png" alt="Christopher Timmons" class="picHover" id="christopherTimmons"> 
+                    <div class="hoverLinks">
+                      <a href="https://www.linkedin.com/pub/christopher-timmons/bb/549/475" target="_blank">
+                        <img src="img/linkedin.svg" alt="Christopher on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Christopher Timmons</h4>
+                <h5>ATEC 2015</h5>
+              </div>
+              
+              <div class="imgFloat linksButton">
+                <img src="img/kamin.png" alt="Kira Amin" class="picHover" id="kiraAmin"> 
+                    <div class="hoverLinks">
+                      <a href="http://www.bldg28.co/" target="_blank">
+                        <img src="img/portfolio.svg" alt="Kiras Website" class="linkItem1">
+                      </a>
+                      <a href="https://www.linkedin.com/pub/kirati-amin/40/194/a2b" target="_blank">
+                        <img src="img/linkedin.svg" alt="Kira on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Kira Amin</h4>
+                <h5>EMAC 2015</h5>
+              </div>
+    
+    		<div class="imgFloat linksButton">
+                <img src="img/jackieNguyen.png" alt="Jackie Nguyen" class="picHover" id="jackieNguyen"> 
+                    <div class="hoverLinks">
+                      <a href="http://nguyenjackie.com/" target="_blank">
+                        <img src="img/portfolio.svg" alt="Jackies Website" class="linkItem1">
+                      </a>
+                      <a href="https://www.linkedin.com/pub/jackie-nguyen/58/484/456" target="_blank">
+                        <img src="img/linkedin.svg" alt="Jackie on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Jackie Nguyen</h4>
+                <h5>ATEC 2015</h5>
+              </div>
+    
+    		<div class="imgFloat linksButton">
+                <img src="img/ttyler.png" alt="Timmothy Tyler" class="picHover" id="timmothyTyler"> 
+                    <div class="hoverLinks">
+                      <a href="https://twitter.com/TimRTyler" target="_blank">
+                        <img src="img/twitter.svg" alt="Timmothy on Twitter" class="linkItem2">
+                      </a>
+                    </div>
+                <h4>Timmothy Tyler</h4>
+                <h5>ATEC 2016</h5>
+              </div>
+    
+    		</div><!-- close wrapper div -->
+        </div>
+    </div><!-- close code team members row -->
+        
+    <!-- start research team members -->
+     <div class="row otherTeamMembers" id="researchTeam">
+        <div class="col-md-12">
+            <h3>Research Team</h3> 
+            <a href="#team">
+                <div>
+                    <img src="img/upArrow.svg" class="upButton">
+                </div>
+            </a>
+        </div>
+    </div><!-- close row -->
+
+    <div class="row otherTeamMembers">
+        <div class="col-md-12">
+    		<div class="center">    
+        
+        	<div class="imgFloat linksButton">
+                <img src="img/sravi.png" alt="Shruthi Ravi" class="picHover" id="shruthiRavi"> 
+                    <div class="hoverLinks">
+                      <a href="https://www.linkedin.com/pub/shruthi-ravi/bb/435/391" target="_blank">
+                        <img src="img/linkedin.svg" alt="Lina on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Shruthi Ravi</h4>
+                <h5>ATEC 2015</h5>
+            </div>
+        
+        	<div class="imgFloat linksButton">
+                <img src="img/clopez.png" alt="Claudia Lopez" class="picHover" id="claudiaLopez"> 
+                    <div class="hoverLinks">
+                    </div>
+                <h4>Claudia Lopez</h4>
+                <h5>ATEC 2015</h5>
+            </div>
+        
+			<div class="imgFloat linksButton">
+                <img src="img/kswenn.png" alt="Kelsee Swenn" class="picHover" id="kelseeSwenn"> 
+                    <div class="hoverLinks">
+                      <a href="https://www.linkedin.com/pub/kelsee-swenn/9a/9/905" target="_blank">
+                        <img src="img/linkedin.svg" alt="Kelsee on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Kelsee Swenn</h4>
+                <h5>EMAC 2017</h5>
+            </div>  
+            
+            <div class="imgFloat linksButton">
+                <img src="img/gvillalba.png" alt="Geoffrey Villalba" class="picHover" id="geoffreyVillalba"> 
+                    <div class="hoverLinks">
+                      <a href="https://twitter.com/geoff_villalba" target="_blank">
+                        <img src="img/twitter.svg" alt="Geoffrey on Twitter" class="linkItem2">
+                      </a>
+                      <a href="https://www.linkedin.com/in/geoffreyvillalba" target="_blank">
+                        <img src="img/linkedin.svg" alt="Geoffrey on LinkedIn" class="linkItem3">
+                      </a>
+                    </div>
+                <h4>Geoffrey Villalba</h4>
+                <h5>EMAC 2015</h5>
+            </div>      
+	        
+        	</div><!-- close wrapper div -->
+        </div>
+    </div><!-- close code team members row -->
         
         
     <div class="row" id="footer">
@@ -288,51 +493,63 @@
 </body>
 <script>
 
-$( document ).ready(function() {
+$(document).ready(function() {
 	//keep carousel from auto sliding
 	$('.carousel').carousel({
     interval: false
 	}) 
 
 	//on page load, hide other team members
-	$("#teamMembers").hide();
+	$(".otherTeamMembers").hide();
+	//alert("poop");
 	
+	var teamMembers = true;
 	//on click, show other group members
-	$("#teamMembers").click(function(){
-		$(this).show();
+	$("#teamButton").click(function(){
+		if (teamMembers == true){
+			$(".otherTeamMembers").show();
+			document.getElementById("teamButtonMessage").innerHTML = String("Click here to hide the other group members.");
+			teamMembers = false;
+		}
+		else{
+			$(".otherTeamMembers").hide();
+			document.getElementById("teamButtonMessage").innerHTML = String("Wanna see everyone who helped make this project possible? Click here to see the other contributors.");
+			teamMembers = true;
+		}
 	});
 	
 	//on click, hide other group members
-	$("#teamMembers").click(function(){
-		$(this).hide();
-	});
+	
+	
+
 
     //pop out links on headshots
-    //need to add link imgs to website!!!!!!!!!
-    var open = false;
+    $("div.imgFloat").attr("ropen", "false");
 
     $("div.imgFloat").click(function() {
+        //alert($(this).attr("ropen"));
 
-      if (open == false) {
-        $(".linkItem1").addClass("linkItems1");
-        $(".linkItem2").addClass("linkItems2");
-        $(".linkItem3").addClass("linkItems3");
+      if ($(this).attr("ropen") == "false") {
+        $(this).find(".linkItem1").addClass("linkItems1");
+        $(this).find(".linkItem2").addClass("linkItems2");
+        $(this).find(".linkItem3").addClass("linkItems3");
 		
-		$(".linkItem1").removeClass("linkItemsClose1");
-        $(".linkItem2").removeClass("linkItemsClose2");
-        $(".linkItem3").removeClass("linkItemsClose3");
+		$(this).find(".linkItem1").removeClass("linkItemsClose1");
+        $(this).find(".linkItem2").removeClass("linkItemsClose2");
+        $(this).find(".linkItem3").removeClass("linkItemsClose3");
 
-        open = true;
+        $(this).attr("ropen", "true");
+
       } else {
-        $(".linkItem1").addClass("linkItemsClose1");
-        $(".linkItem2").addClass("linkItemsClose2");
-        $(".linkItem3").addClass("linkItemsClose3");
+        $(this).find(".linkItem1").addClass("linkItemsClose1");
+        $(this).find(".linkItem2").addClass("linkItemsClose2");
+        $(this).find(".linkItem3").addClass("linkItemsClose3");
 		
-		$(".linkItem1").removeClass("linkItems1");
-        $(".linkItem2").removeClass("linkItems2");
-        $(".linkItem3").removeClass("linkItems3");
+		$(this).find(".linkItem1").removeClass("linkItems1");
+        $(this).find(".linkItem2").removeClass("linkItems2");
+        $(this).find(".linkItem3").removeClass("linkItems3");
 
-        open = false;
+        $(this).attr("ropen", "false");
       }
     });
 });
