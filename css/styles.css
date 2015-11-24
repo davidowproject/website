@@ -24,19 +24,16 @@ p{
 }
 
 .navbar-default{
-background-color: #fff;
-border-color:#fff;
+	background-color: #fff;
+	border-color:#fff;
 }
 
 h2{
-font-size:3em;
+	font-size:3em;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-#home{
-	
-}
 /***********************
 NAV BAR
 ***********************/
@@ -78,7 +75,9 @@ NAV BAR
 	}
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-padding:1em;}
+	padding:1em;
+}
+
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
@@ -238,9 +237,9 @@ div.active{
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
+  width:200px;
 <<<<<<< HEAD
-  width:150px;
-    border-radius:50%;
+    /*border-radius:50%;*/
 =======
   width:200px;
   cursor: pointer;
