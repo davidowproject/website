@@ -162,7 +162,7 @@
     		<div class="center">
             
                 <div class="imgFloat linksButton">
-                  <img src="img/dylano.jpg" alt="Dylan Orgeron" class="picHover" id="dylanOrgeron">
+                  <img src="img/dorgeron.png" alt="Dylan Orgeron" class="picHover" id="dylanOrgeron">
                     <div class="hoverLinks">
                         <a href="https://www.linkedin.com/pub/dylan-orgeron/90/6a0/b90" target="_blank">
                             <img src="img/linkedin.svg" alt="Dylan on LinkedIn" class="linkItem3">
@@ -173,7 +173,7 @@
                 </div>
         
                 <div class="imgFloat linksButton">
-                  <img src="img/judy-square.jpg" alt="Judy Nguyen" class="picHover" id="judyNguyen"> 
+                  <img src="img/jnguyen.png" alt="Judy Nguyen" class="picHover" id="judyNguyen"> 
                     <div class="hoverLinks">
                         <a href="http://www.linkedin.com/pub/judy-nguyen/67/309/72a" target="_blank">
                             <img src="img/linkedin.svg" alt="Judys LinkedIn" class="linkItem3">
@@ -184,7 +184,7 @@
                 </div>
         
                 <div class="imgFloat linksButton">
-                  <img src="img/dylanc.jpg" alt="Dylan Carroll" class="picHover" id="dylanCarroll"> 
+                  <img src="img/dcarroll.png" alt="Dylan Carroll" class="picHover" id="dylanCarroll"> 
                     <div class="hoverLinks">
                         <a href="https://twitter.com/D_C___" target="_blank">
                             <img src="img/twitter.svg" alt="Dylan on Twitter" class="linkItem2">
@@ -198,7 +198,7 @@
                 </div>
         
                 <div class="imgFloat linksButton">
-                  <img src="img/summer.jpg" alt="Summer Saylor" class="picHover" id="summerSaylor"> 
+                  <img src="img/ssaylor.png" alt="Summer Saylor" class="picHover" id="summerSaylor"> 
                     <div class="hoverLinks">
                         <a href="http://elsaylor.com/summersaylor/" target="_blank">
                             <img src="img/portfolio.svg" alt="Summers Website" class="linkItem1">
@@ -215,14 +215,14 @@
                 </div>
                 
                 <div class="imgFloat linksButton">
-                <img src="img/lance.jpg" alt="Lance King" class="picHover" id="lanceKing"> 
+                <img src="img/lking.png" alt="Lance King" class="picHover" id="lanceKing"> 
                     <div class="hoverLinks"></div>
                     <h4>Lance King</h4>
                     <h5>Project Founder</h5>
               	</div> 
                
               <div class="imgFloat linksButton">
-                <img src="img/cassini.jpg" alt="Cassini Nazir" class="picHover" id="cassiniNazir"> 
+                <img src="img/cnazir.png" alt="Cassini Nazir" class="picHover" id="cassiniNazir"> 
                     <div class="hoverLinks">
                       <a href="http://cassininazir.com/" target="_blank">
                         <img src="img/portfolio.svg" alt="Cassinis Website" class="linkItem1">
@@ -243,6 +243,47 @@
               	<p>Wanna see everyone who helped make this project possible? Click here to see the other contributors.</p>
             </div>
               
+
+
+            <!-- start other team members -->
+             <div class="row" id="codeTeam">
+                <div class="col-md-12">
+                    <h3>Code Team</h3> 
+                    <!--<a href="#team">
+                        <div>
+                            <img src="img/upArrow.svg" class="upButton">
+                        </div>
+                    </a>-->
+                </div>
+            </div><!-- close row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="center">
+
+                        <div class="imgFloat linksButton">
+                        <img src="img/cnazir.png" alt="Cassini Nazir" class="picHover" id="cassiniNazir"> 
+                            <div class="hoverLinks">
+                              <a href="http://cassininazir.com/" target="_blank">
+                                <img src="img/portfolio.svg" alt="Cassinis Website" class="linkItem1">
+                              </a>
+                              <a href="https://twitter.com/cassininazir" target="_blank">
+                                <img src="img/twitter.svg" alt="Cassini on Twitter" class="linkItem2">
+                              </a>
+                              <a href="https://www.linkedin.com/in/cassininazir" target="_blank">
+                                <img src="img/linkedin.svg" alt="Cassini on LinkedIn" class="linkItem3">
+                              </a>
+                            </div>
+                        <h4>Cassini Nazir</h4>
+                        <h5>Project Coordinator</h5>
+                      </div>
+
+                    </div><!-- close wrapper div -->
+                </div>
+            </div><!-- close other team members row -->
+
+
+
             </div><!-- close wrapper div -->
         </div>
     </div><!-- close row -->
@@ -309,30 +350,34 @@ $( document ).ready(function() {
 
     //pop out links on headshots
     //need to add link imgs to website!!!!!!!!!
-    var open = false;
+    //var open = false;
+
+    $("div.imgFloat").attr("ropen", "false");
 
     $("div.imgFloat").click(function() {
+        //alert($(this).attr("ropen"));
 
-      if (open == false) {
-        $(".linkItem1").addClass("linkItems1");
-        $(".linkItem2").addClass("linkItems2");
-        $(".linkItem3").addClass("linkItems3");
+      if ($(this).attr("ropen") == "false") {
+        $(this).find(".linkItem1").addClass("linkItems1");
+        $(this).find(".linkItem2").addClass("linkItems2");
+        $(this).find(".linkItem3").addClass("linkItems3");
 		
-		$(".linkItem1").removeClass("linkItemsClose1");
-        $(".linkItem2").removeClass("linkItemsClose2");
-        $(".linkItem3").removeClass("linkItemsClose3");
+		$(this).find(".linkItem1").removeClass("linkItemsClose1");
+        $(this).find(".linkItem2").removeClass("linkItemsClose2");
+        $(this).find(".linkItem3").removeClass("linkItemsClose3");
 
-        open = true;
+        $(this).attr("ropen", "true");
+
       } else {
-        $(".linkItem1").addClass("linkItemsClose1");
-        $(".linkItem2").addClass("linkItemsClose2");
-        $(".linkItem3").addClass("linkItemsClose3");
+        $(this).find(".linkItem1").addClass("linkItemsClose1");
+        $(this).find(".linkItem2").addClass("linkItemsClose2");
+        $(this).find(".linkItem3").addClass("linkItemsClose3");
 		
-		$(".linkItem1").removeClass("linkItems1");
-        $(".linkItem2").removeClass("linkItems2");
-        $(".linkItem3").removeClass("linkItems3");
+		$(this).find(".linkItem1").removeClass("linkItems1");
+        $(this).find(".linkItem2").removeClass("linkItems2");
+        $(this).find(".linkItem3").removeClass("linkItems3");
 
-        open = false;
+        $(this).attr("ropen", "false");
       }
     });
 });
