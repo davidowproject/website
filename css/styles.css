@@ -70,6 +70,7 @@ NAV BAR
 }
 	.navbar-default .navbar-nav>li>a:hover{
 		font-family:""Source Sans Pro"", sans-serif;
+<<<<<<< HEAD
 		color:#4fc5e7;
 		text-decoration:none;
 	}
@@ -77,6 +78,43 @@ NAV BAR
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	padding:1em;
 }
+=======
+		color:#4fc5e7;
+		text-decoration:none;
+	}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	padding:1em;
+}
+
+#navBar{
+	background-color:#3b3c3e;
+	color:#ebebeb;
+	height:80px;
+}
+	#navBar h2{
+		font-family:"Oswald", sans-serif;
+		font-weight:300;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-size:2em;	
+		display:inline;
+	}
+	#navBar .col-md-8{
+		text-align:right;	
+	}
+	#navBar a{
+		font-family:"Source Sans Pro", sans-serif;
+		font-size:1.2em;
+		color:#ebebeb;
+		padding-right:5%;
+	}
+		#navBar a:hover{
+		font-family:"Source Sans Pro", sans-serif;
+		color:#4fc5e7;
+		text-decoration:none;
+	}
+>>>>>>> origin/master
 <<<<<<< HEAD
 
 
