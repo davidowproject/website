@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6{
 		{width:10em;	}
 	}
 .logos{
-	max-width:100%;
+	max-width:80%;
 	height:auto;
 }
 /***********************
@@ -216,6 +216,7 @@ CAROUSEL
 div.item, div.active h4{
 	margin-top:0%;	
 }
+
 /***********************
 PHOTOS
 ***********************/
@@ -261,7 +262,31 @@ div.active{
     text-align: center;
 }
 
-/******** HEADSHOT POPOUT LINKS *********/
+/***********************
+OTHER GROUP MEMBERS BUTTON
+***********************/
+.groupButton{
+	content:url(../img/group2.png);
+	width:8em !important;
+}
+#teamButton img{
+	width:6em;
+}
+#teamButton{
+	margin-left: 5%;
+	margin-top:7%;
+	width:240px;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+}
+	div#teamButton:hover{
+		color:#4FB5D2;
+	}
+
+/***********************
+HEADSHOT POPOUT LINKS
+***********************/
 .linksButton {
   position: relative;
 }
@@ -439,24 +464,6 @@ div.active{
 	left:0px;
   }
 }
-#teamButton{
-	margin-left: 5%;
-	margin-top:7%;
-	width:300px;
-	float:left;
-	cursor:pointer;
-	text-align:center;
-	padding: 2%;
-    border-radius: 5px;
-    border: 2.5px solid #4FC5E7;
-}
-	div#teamButton:hover{
-		border:none;
-		border-radius:5px;
-		background-color:#4FC5E7;
-		color:white;
-	}
-	
 
 /***********************
 FOOTER
