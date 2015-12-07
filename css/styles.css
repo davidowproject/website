@@ -34,15 +34,12 @@ h2{
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-#home{
-	
-}
-=======
+
+
 /***********************
 NAV BAR
 ***********************/
->>>>>>> origin/master
+
 #Dlogo{
 	width:40px;
 	display:inline;
@@ -76,7 +73,7 @@ NAV BAR
 }
 	.navbar-default .navbar-nav>li>a:hover{
 		font-family:""Source Sans Pro"", sans-serif;
-<<<<<<< HEAD
+
 		color:#4fc5e7;
 		text-decoration:none;
 	}
@@ -84,7 +81,7 @@ NAV BAR
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	padding:1em;
 }
-=======
+
 		color:#4fc5e7;
 		text-decoration:none;
 	}
@@ -120,12 +117,6 @@ NAV BAR
 		color:#4fc5e7;
 		text-decoration:none;
 	}
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
-<<<<<<< HEAD
->>>>>>> origin/master
-
 
 #mission, #process, #team{
 	text-align:center;
@@ -223,14 +214,30 @@ NAV BAR
 	width:250px;
 	margin:auto;	
 }
-<<<<<<< HEAD
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    margin:auto;
+}
+
+#carousel-phone{
+    width:50%;
+    margin:auto;
+}
+
+.carousel-indicators{
+    top:-25px;
+}
+
+
+
+
 /******** PHOTOS *********/
-=======
+
 
 /***********************
 PHOTOS
 ***********************/
->>>>>>> origin/master
+
 .center {
     margin: auto;
     width: 90%;
@@ -259,19 +266,18 @@ div.active{
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
-<<<<<<< HEAD
+
   width:150px;
     border-radius:50%;
     width:80%;
-=======
+
   width:200px;
-<<<<<<< HEAD
+
     /*border-radius:50%;*/
-=======
+
   width:200px;
   cursor: pointer;
->>>>>>> origin/master
->>>>>>> origin/master
+
 }
 	div.imgFloat h4, div.imgFloat h5 {
     margin-left: 0;
@@ -495,14 +501,14 @@ HEADSHOT POPOUT LINKS
 .carousel-control{
 	width:5%;	
 }
-<<<<<<< HEAD
+
 .carousel-inner{
 	height:auto;	
 }
 div.item, div.active h4{
 	margin-top:0%;	
 }
-=======
+
 	#footerContent :link{
 	color:white;
 	}
@@ -516,4 +522,4 @@ div.item, div.active h4{
 	width:250px;
 	margin:auto;	
 }
->>>>>>> origin/master
+
