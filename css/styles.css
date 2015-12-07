@@ -24,19 +24,25 @@ p{
 }
 
 .navbar-default{
-background-color: #fff;
-border-color:#fff;
+	background-color: #fff;
+	border-color:#fff;
 }
 
 h2{
-font-size:3em;
+	font-size:3em;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 #home{
 	
 }
+=======
+/***********************
+NAV BAR
+***********************/
+>>>>>>> origin/master
 #Dlogo{
 	width:40px;
 	display:inline;
@@ -70,12 +76,23 @@ font-size:3em;
 }
 	.navbar-default .navbar-nav>li>a:hover{
 		font-family:""Source Sans Pro"", sans-serif;
+<<<<<<< HEAD
 		color:#4fc5e7;
 		text-decoration:none;
 	}
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-padding:1em;}
+	padding:1em;
+}
+=======
+		color:#4fc5e7;
+		text-decoration:none;
+	}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	padding:1em;
+}
+
 #navBar{
 	background-color:#3b3c3e;
 	color:#ebebeb;
@@ -103,6 +120,11 @@ padding:1em;}
 		color:#4fc5e7;
 		text-decoration:none;
 	}
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> origin/master
 
 
 #mission, #process, #team{
@@ -165,7 +187,7 @@ padding:1em;}
 		{width:10em;	}
 	}
 .logos{
-	max-width:100%;
+	max-width:80%;
 	height:auto;
 }
 	
@@ -201,7 +223,14 @@ padding:1em;}
 	width:250px;
 	margin:auto;	
 }
+<<<<<<< HEAD
 /******** PHOTOS *********/
+=======
+
+/***********************
+PHOTOS
+***********************/
+>>>>>>> origin/master
 .center {
     margin: auto;
     width: 90%;
@@ -230,9 +259,19 @@ div.active{
 /*position pic so links can sit on top of them*/
 .picHover{
   position:absolute;
+<<<<<<< HEAD
   width:150px;
     border-radius:50%;
     width:80%;
+=======
+  width:200px;
+<<<<<<< HEAD
+    /*border-radius:50%;*/
+=======
+  width:200px;
+  cursor: pointer;
+>>>>>>> origin/master
+>>>>>>> origin/master
 }
 	div.imgFloat h4, div.imgFloat h5 {
     margin-left: 0;
@@ -240,11 +279,40 @@ div.active{
     text-align: center;
 }
 
-/******** HEADSHOT POPOUT LINKS *********/
+/***********************
+OTHER GROUP MEMBERS BUTTON
+***********************/
+.groupButton{
+	content:url(../img/group2.png);
+	width:8em !important;
+}
+#teamButton img{
+	width:6em;
+}
+#teamButton{
+	margin-left: 5%;
+	margin-top:7%;
+	width:240px;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+}
+	div#teamButton:hover{
+		color:#4FB5D2;
+	}
+
+/***********************
+HEADSHOT POPOUT LINKS
+***********************/
 .linksButton {
   position: relative;
 }
-.linkItem1 ,.linkItem2, .linkItem3 {
+.linkItem1{
+  width:27px;	
+  position: relative;
+  visibility: hidden;
+}
+.linkItem2, .linkItem3 {
   width: 30px;
   position: relative;
   visibility: hidden;
@@ -264,19 +332,19 @@ div.active{
   0% {
     opacity: 0;
 	bottom:0px;
-	left:60px;
+	left:40px;
   }
   50% {
     opacity: .2;
-    bottom: 300px;
+    bottom: 320px;
   }
   70%{
 	opacity: .7; 
   }
   100% {
     opacity: 1;
-    bottom: 290px;
-	left:150px;
+    bottom: 300px;
+	left:130px;
   }
 }
 /*twitter - on click, show menu icon 2*/
@@ -304,8 +372,8 @@ div.active{
   }
   100% {
     opacity: 1;
-    left: 193px;
-	bottom:270px;
+    left: 170px;
+	bottom:285px;
   }
 }
 /*linkedin - on click, show menu icon 3*/
@@ -321,20 +389,20 @@ div.active{
 @-webkit-keyframes cssAnimation3 {
   0% {
     opacity: 0;
-	left:0px;
+	left:40px;
 	bottom:100px;
   }
   50% {
     opacity: .2;
-	bottom:260px;
+	bottom:270px;
   }
   70%{
 	opacity: .7; 
   }
   100% {
     opacity: 1;
-    left: 220px;
-	bottom:235px;
+    left: 202px;
+	bottom:257px;
   }
 }
 /*portfolio - on click, hide menu icon 1*/
@@ -349,12 +417,12 @@ div.active{
 @-webkit-keyframes cssAnimationClose1 {
   0% {
     opacity: 1;
-    bottom: 0px;
-	left:150px;
+    bottom: 30px;
+	left:110px;
   }
   20% {
     opacity: .3;
-	bottom: 30px;
+	bottom: 60px;
   }
   100% {
     opacity: 0;
@@ -376,7 +444,7 @@ div.active{
   0% {
     opacity: 1;
     bottom: 0px;
-	left:150px;
+	left:120px;
   }
   20% {
     opacity: .3;
@@ -401,7 +469,7 @@ div.active{
   0% {
     opacity: 1;
     bottom: -40px;
-	left:155px;
+	left:130px;
   }
   20% {
     opacity: .3;
@@ -427,9 +495,25 @@ div.active{
 .carousel-control{
 	width:5%;	
 }
+<<<<<<< HEAD
 .carousel-inner{
 	height:auto;	
 }
 div.item, div.active h4{
 	margin-top:0%;	
 }
+=======
+	#footerContent :link{
+	color:white;
+	}
+	#footerContent :visited{
+	color:white;
+	}
+	#footerContent :hover{
+	color:#4FC5E7;	
+	}
+#footerText{
+	width:250px;
+	margin:auto;	
+}
+>>>>>>> origin/master
